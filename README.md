@@ -1,4 +1,4 @@
-# Inertia-Based Scale Estimation
+# Inertial-Based Scale Estimation
 
 
 A fast C++ implementation of the IROS 2017 paper “Inertial-Based Scale Estimation for Structure from Motion on Mobile Devices”  https://arxiv.org/abs/1611.09498
@@ -23,6 +23,15 @@ Kalman filter and Rauch-Tung-Striebel smoother to smooth visual acceleration.
 
 Perform scale estimation in frequency domain, rather than time domain: this helps with noisy IMU and is not sensitive to the delta-T which can vary during SfM process.
 
+## Building
+
+To build on Ubuntu:
+```
+mkdir build
+cd build
+cmake ..
+make
+```
 
 ## Results
 Avg error: <3% after 2 meters of camera travel.  <1% after 14m
